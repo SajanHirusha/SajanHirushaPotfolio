@@ -1,0 +1,968 @@
+* {
+  color: white;
+}
+
+#nav {
+  width: 100%;
+  display: flex;
+  height: 100px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1 !important;
+  opacity: 0.94;
+}
+
+.left {
+  flex: 1;
+  height: 100px;
+}
+.left img {
+  width: 70px;
+  height: 60px;
+  margin-left: 60px;
+  margin-top: 20px;
+  border-radius: 100%;
+}
+
+.middle {
+  flex: 4;
+  padding-top: 40px;
+  height: 100px;
+}
+.middle h3 {
+  padding-left: 20px;
+  font: 100 16px popins;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c4cfde;
+}
+
+.right {
+  flex: 7;
+  padding-top: 40px;
+  padding-right: 40px;
+  height: 100px;
+}
+.right a {
+  text-decoration: none;
+  color: #c4cfde !important;
+}
+.right a:hover {
+  cursor: pointer;
+  color: #D2042D !important;
+}
+.right a:after {
+  color: dodgerblue !important;
+}
+.right ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.right ul li {
+  list-style-type: none;
+  padding: 0px 20px;
+  font: 300 13px "Montserrat";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#navigation {
+  display: none;
+}
+
+.open {
+  display: none;
+}
+
+#menuImg {
+  width: 20px;
+  height: 17px;
+  opacity: 0.8;
+  position: absolute;
+  top: 37px;
+  left: 20px;
+}
+
+.sidenavigation {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2d3237;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenavigation li {
+  list-style: none;
+}
+.sidenavigation a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 17px;
+  color: #D2042D;
+  display: block;
+  transition: 0.3s;
+  line-height: 1.5;
+}
+.sidenavigation a:hover {
+  color: yellow;
+}
+.sidenavigation .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#head {
+  margin-top: 0;
+  background-color: black;
+  height: 83%;
+  overflow: hidden;
+}
+#head #myIntro1 p {
+  position: absolute;
+  top: 25%;
+  padding-left: 30px;
+  font: 700 55px Serif;
+}
+#head #myIntro1 p span {
+  color: #D2042D;
+}
+#head #myIntro1 .dynamic-txts {
+  position: absolute;
+  top: 35%;
+  margin-top: 10px;
+  height: 91px;
+  line-height: 90px;
+  overflow: hidden;
+}
+#head #myIntro1 .dynamic-txts li {
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 50px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+#head #myIntro1 .dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+#head #myIntro1 .dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s infinite;
+}
+@keyframes typing {
+  40%, 60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+#head #headImage {
+  width: 47%;
+  height: 100%;
+  background-image: url("sajanImage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  position: relative;
+  left: 52%;
+}
+#head #myIntro2 {
+  position: absolute;
+  top: 52%;
+  left: 30px;
+  width: 47%;
+}
+#head #myIntro2 p {
+  color: #878e99;
+  font: 500 20px Serif;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+#head #socialMediaIcon {
+  position: absolute;
+  top: 80%;
+  left: 30px;
+}
+#head #socialMediaIcon .ui {
+  margin: 4px;
+}
+#head #socialMediaIcon p {
+  text-transform: uppercase;
+  color: #c4cfde;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+#toUp {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  background-color: #191b1e;
+  border-color: yellow;
+  position: fixed;
+  left: 91%;
+  top: 88%;
+  z-index: 2 !important;
+}
+#toUp:hover {
+  border-color: #D2042D;
+  cursor: pointer;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  background-color: #23262a;
+  height: 88%;
+  width: 100%;
+  overflow: hidden;
+}
+#about #p2 {
+  background-color: #212428;
+  border-radius: 20px;
+  box-shadow: 5px 5px 11px 11px #2d3237;
+  margin: 0 7px;
+  padding: 21px 40px;
+  transition: 1s;
+}
+#about #p2:hover {
+  transform: scale(1.03);
+}
+#about .inner1 {
+  background-color: #212428;
+  box-shadow: 20px 20px #24282c;
+}
+#about .inner1 #aboutImage {
+  width: 70%;
+  height: 430px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  margin-left: 14.8%;
+  transition: 1s;
+}
+#about .inner1 #aboutImage:hover {
+  transform: scale(1.07);
+}
+#about .inner2 {
+  padding: 70px;
+}
+#about .inner2 .p2 {
+  color: #878e99;
+  font: 500 20px Serif;
+  line-height: 1.6;
+}
+#about .inner2 button {
+  color: #D2042D;
+  padding: 20px 28px;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: #24282c;
+  box-shadow: 10px 10px #1F2125;
+}
+
+#skills {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("backgroundSkills.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.skillsImage {
+  background-color: #212428;
+  box-shadow: 5px 5px 11px 11px #2d3237;
+  height: 220px;
+  margin: 40px;
+  position: relative;
+  left: 20%;
+  transition: 1s;
+  cursor: pointer;
+}
+.skillsImage:hover {
+  transform: scale(1.07);
+}
+.skillsImage img {
+  width: 300px;
+  height: 160px;
+  position: relative;
+  top: 20px;
+}
+
+#skills, #projects {
+  text-align: center;
+  background-color: #23262a;
+  padding-bottom: 100px;
+}
+
+#projects {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.project {
+  position: absolute;
+  top: 84.1%;
+  left: 25%;
+}
+
+.para {
+  color: #D2042D;
+  letter-spacing: 2px;
+  margin-top: 70px;
+}
+
+.head {
+  color: #c4cfde;
+  font: 700 60px sans-serif;
+}
+
+hr {
+  margin: 0 auto;
+  color: #060002;
+  width: 91%;
+}
+
+#education {
+  background-color: #23262a;
+}
+#education .para, #education .head {
+  text-align: center;
+}
+#education .educationRow {
+  padding: 5%;
+  padding-top: 2% !important;
+}
+#education .educationRow ul li {
+  list-style-type: square;
+  margin: 16px;
+  font: 500 20px Serif;
+  color: #c4cfde;
+}
+
+#educationIntro {
+  margin: 40px;
+  padding: 40px 30px;
+  background-color: #212428;
+  border-radius: 10px;
+  box-shadow: 5px 5px 11px 11px #2d3237;
+  transition: 1s;
+}
+#educationIntro:hover {
+  transform: scale(1.03);
+}
+#educationIntro p {
+  color: #c4cfde;
+  font: 100 17px Montserrat;
+  line-height: 30px !important;
+  letter-spacing: 1.5px;
+}
+
+#OL, #AL {
+  padding-left: 10%;
+}
+#OL h1, #AL h1 {
+  text-decoration: underline #D2042D;
+  text-underline-offset: 4px;
+}
+#OL h1:hover, #AL h1:hover {
+  text-decoration: underline yellow;
+}
+
+#contact {
+  text-align: center;
+  background-color: #23262a;
+  padding-bottom: 40px;
+}
+
+.rowContact {
+  position: relative;
+  left: 25px;
+  width: 98%;
+  margin-top: 40px;
+}
+
+.otherInfo, .form {
+  background-color: #1b1e21;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+form {
+  text-align: left;
+  padding: 20px;
+}
+form input {
+  width: 98%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #191b1e;
+  border-color: #3c4851;
+}
+form input:hover {
+  border-color: #D2042D;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #191b1e;
+  border-color: #3c4851;
+}
+textarea:hover {
+  border-color: #D2042D;
+}
+
+.form label {
+  color: #c4cfde;
+  font: 500 12px "sans-serif";
+  letter-spacing: 2px;
+  padding-top: 30px;
+}
+.form #name, .form #pNumber {
+  width: 280px;
+  height: 50px;
+}
+
+#number {
+  position: relative;
+  bottom: 40px;
+  left: 120px;
+}
+
+#submit {
+  width: 97%;
+  margin-left: 1%;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: #232a2f;
+  color: #c4cfde;
+}
+
+#myName {
+  font: 700 40px Serif;
+  margin: 20px;
+  position: relative;
+  top: 2%;
+}
+#myName span {
+  color: #D2042D;
+}
+
+.contactButton {
+  width: 91px;
+  height: 34px;
+  background-color: #D2042D;
+  border-radius: 10px;
+  font: 500 13px "sans-serif";
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+.contactButton span {
+  background: #D2042D;
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 1s;
+}
+.contactButton:hover span {
+  width: 100%;
+}
+.contactButton:hover {
+  background: transparent;
+}
+
+.text {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 30px !important;
+  position: relative;
+  top: 2%;
+  font: 500 20px "sans-serif";
+  color: #c4cfde;
+}
+.text:hover {
+  text-decoration: underline;
+  text-decoration-color: #D2042D;
+  text-decoration-style: dashed;
+  text-underline-offset: 8px !important;
+}
+
+#contactIntro {
+  text-align: left;
+  line-height: 34px !important;
+  margin: 20px;
+  margin-top: 55px !important;
+  font: 100 17px Montserrat;
+  color: #c4cfde;
+}
+
+.otherInfo button {
+  margin: 20px !important;
+}
+
+#footer {
+  background-color: #060002;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#footer .ui {
+  margin: 4px;
+}
+#footer #footerSection1 {
+  padding-top: 50px;
+}
+#footer #footerSection3 {
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+#footer #footerSection3 p {
+  padding-top: 10px;
+  color: #878e99;
+}
+#footer #footerSection3 hr {
+  color: #878e99;
+  width: 91%;
+}
+#footer ul {
+  display: flex;
+}
+#footer ul a {
+  color: #878e99;
+  font: 300 13px "Montserrat";
+}
+#footer ul a:hover {
+  cursor: pointer;
+  color: #D2042D;
+  text-decoration: underline dashed;
+  text-underline-offset: 4px;
+}
+#footer ul li {
+  list-style: none;
+  margin: 30px;
+}
+
+@media only screen and (max-width: 1330px) {
+  #name, #pNumber {
+    width: 98% !important;
+  }
+  #number {
+    position: initial;
+  }
+  #myName {
+    font-size: 38px;
+  }
+}
+@media only screen and (max-width: 1160px) {
+  #nav .left img {
+    width: 60px;
+    height: 52px;
+  }
+  #nav .middle h3 {
+    font-size: 12px;
+  }
+  #nav .right ul li {
+    padding: 0px 16px;
+    font-size: 11px;
+  }
+  #head #myIntro1 p {
+    font-size: 47px;
+  }
+  #head #myIntro1 p span {
+    color: #D2042D;
+  }
+  #head #myIntro1 .dynamic-txts li {
+    font-size: 43px;
+  }
+  #head #headImage {
+    width: 38%;
+    top: 4%;
+  }
+  #about {
+    height: 80%;
+  }
+  #about .inner1 #aboutImage {
+    width: 80%;
+    margin-left: 10%;
+  }
+  #myName {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 961px) {
+  .left img {
+    margin-left: 20px;
+  }
+  .middle h3 {
+    font-size: 11px !important;
+  }
+  .right {
+    padding-right: 20px;
+  }
+  .right ul li {
+    padding: 0px 8px !important;
+    font-size: 10px !important;
+  }
+  #head #myIntro1 p {
+    top: 21%;
+  }
+  #head #myIntro1 .dynamic-txts {
+    top: 28%;
+  }
+  #head #headImage {
+    width: 47%;
+    top: 17%;
+    left: 53%;
+  }
+  #head #myIntro2 {
+    top: 43%;
+  }
+  #head #myIntro2 #socialMediaIcon {
+    top: 84.4% !important;
+  }
+  #toUp {
+    left: 88%;
+  }
+  #about {
+    height: 73%;
+  }
+  #about #p2 {
+    padding: 21px 30px;
+  }
+  #about .inner1 #aboutImage {
+    width: 83%;
+    height: 380px;
+    margin-left: 8%;
+    margin-top: 82px;
+  }
+  #about .inner2 {
+    padding: 52px 30px;
+  }
+  #myName {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  #nav #navigation {
+    order: 1;
+    display: initial;
+  }
+  #nav .open {
+    display: initial;
+  }
+  .left {
+    order: 3;
+    position: relative;
+    left: 2%;
+  }
+  .middle {
+    order: 2;
+    position: relative;
+    left: 43%;
+  }
+  .right {
+    display: none;
+  }
+  #head #myIntro1 p {
+    font-size: 40px;
+  }
+  #head #myIntro1 .dynamic-txts li {
+    font-size: 38px;
+  }
+  #head #headImage {
+    width: 61%;
+    top: 25%;
+    left: 40%;
+  }
+  #about {
+    height: 80%;
+  }
+  #about .inner1 #aboutImage {
+    height: 310px;
+    margin-top: 110px;
+  }
+  .inner2 button {
+    padding: 10px 10px !important;
+    margin-top: 16px;
+  }
+  .head {
+    font-size: 52px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .skillsImage img {
+    width: 250px;
+    height: 120px;
+  }
+  .project {
+    top: 76%;
+  }
+  #footer ul li {
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  #head #myIntro2 {
+    top: 43%;
+    width: 91%;
+  }
+  #head #headImage {
+    display: none;
+  }
+  #head #socialMediaIcon {
+    position: absolute;
+    top: 74%;
+    left: 30px;
+  }
+  .left {
+    order: 3;
+    left: 0.1%;
+  }
+  .middle {
+    left: 34%;
+  }
+  #toUp {
+    left: 80%;
+  }
+  #about {
+    grid-template-columns: 12fr;
+    height: 130%;
+  }
+  #about .inner1 {
+    grid-row: 2/3;
+  }
+  #about .inner1 #aboutImage {
+    height: 280px;
+    width: 73%;
+    margin-top: 30px;
+    margin-left: 13.3%;
+  }
+  #about .inner2 {
+    grid-row: 1/2;
+  }
+  .skillsImage {
+    left: 17%;
+  }
+  .skillsImage img {
+    width: 200px;
+    height: 100px;
+    top: 47px;
+  }
+  .head {
+    font-size: 43px;
+  }
+  .project {
+    left: 22.4%;
+    font-size: 13px;
+  }
+  #footer ul li {
+    margin: 13px;
+  }
+}
+@media only screen and (max-width: 461px) {
+  #head #myIntro1 p {
+    font-size: 30px;
+    top: 24.2%;
+  }
+  #head #myIntro1 .dynamic-txts li {
+    font-size: 30px;
+  }
+  #head #myIntro2 {
+    top: 40%;
+    width: 88%;
+  }
+  .left {
+    left: -4% !important;
+  }
+  .middle {
+    left: 20%;
+  }
+  #about {
+    height: 137%;
+  }
+  #about .inner1 #aboutImage {
+    margin-top: 10px;
+  }
+  .skillsImage {
+    left: 13%;
+    height: 200px;
+  }
+  .skillsImage img {
+    width: 170px;
+    height: 80px;
+  }
+  .head {
+    font-size: 38px;
+  }
+  .project {
+    left: 17%;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  #myName {
+    font-size: 30px;
+  }
+  #footer {
+    display: grid;
+    padding-top: 30px;
+  }
+  #footer #footerSection1 {
+    padding: 30px 10px;
+    margin-bottom: 20px;
+    order: 2;
+    grid-column: 3/4;
+  }
+  #footer #footerSection1 .ui {
+    width: 43%;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  #footer #footerSection2 {
+    grid-column: 1/3;
+    order: 1;
+  }
+  #footer #footerSection2 ul {
+    flex-direction: column;
+  }
+  #footer #footerSection2 ul li {
+    margin: 8px 47px;
+  }
+  #footer #footerSection3 {
+    order: 3;
+    grid-row: 2/3;
+    grid-column: 1/4;
+  }
+}
+@media only screen and (max-width: 380px) {
+  #head #socialMediaIcon {
+    top: 83%;
+  }
+  .left img {
+    margin-top: 28px;
+    width: 44px !important;
+    height: 34px !important;
+  }
+  .middle {
+    left: 13%;
+  }
+  .skillsImage {
+    height: 170px;
+  }
+  .skillsImage img {
+    width: 140px;
+    height: 70px;
+  }
+  .head {
+    font-size: 30px;
+  }
+  #educationIntro {
+    padding: 40px 16px;
+  }
+  .project {
+    left: 13.7%;
+    font-size: 10px;
+  }
+  #myName {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 331px) {
+  #head #myIntro1 p {
+    font-size: 25px;
+    top: 21.4%;
+  }
+  #head #myIntro1 .dynamic-txts {
+    top: 22.4%;
+  }
+  #head #myIntro1 .dynamic-txts li {
+    font-size: 25px;
+  }
+  #head #myIntro2 {
+    top: 34%;
+    width: 83%;
+  }
+  #head #socialMediaIcon {
+    top: 80%;
+  }
+  .left {
+    flex: 1;
+    left: 1% !important;
+  }
+  .middle {
+    flex: 2;
+    left: 16%;
+  }
+  .middle h3 {
+    font-size: 8px !important;
+  }
+  #about {
+    height: 143%;
+  }
+  #about .inner1 #aboutImage {
+    width: 73%;
+    height: 231px;
+    margin-left: 11.8%;
+  }
+  .skillsImage {
+    height: 140px;
+  }
+  .skillsImage img {
+    width: 120px;
+    height: 61px;
+    top: 40px;
+  }
+  #educationIntro p {
+    font-size: 14.8px;
+  }
+  #education .educationRow ul li {
+    font-size: 16.6px;
+    letter-spacing: 1px;
+  }
+  #education h1 {
+    font-size: 20px !important;
+  }
+  .project {
+    left: 11%;
+    top: 80%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
