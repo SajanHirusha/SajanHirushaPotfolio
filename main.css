@@ -32,7 +32,7 @@
 }
 .middle h3 {
   padding-left: 20px;
-  font: 100 16px popins;
+  font: 100 13px popins;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #c4cfde;
@@ -62,7 +62,7 @@
 .right ul li {
   list-style-type: none;
   padding: 0px 20px;
-  font: 300 13px "Montserrat";
+  font: 300 11px "Montserrat";
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -121,6 +121,10 @@
 }
 
 #head {
+  z-index: -1 !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("headBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 0;
   background-color: black;
   height: 83%;
@@ -130,82 +134,59 @@
   position: absolute;
   top: 25%;
   padding-left: 30px;
-  font: 700 55px Serif;
+  font: 700 47px Serif;
 }
 #head #myIntro1 p span {
   color: #D2042D;
 }
-#head #myIntro1 .dynamic-txts {
+#head #dynamic-txts-head {
   position: absolute;
-  top: 35%;
-  margin-top: 10px;
-  height: 91px;
-  line-height: 90px;
-  overflow: hidden;
-}
-#head #myIntro1 .dynamic-txts li {
-  list-style: none;
-  color: #FC6D6D;
-  font-size: 50px;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  animation: slide 12s steps(4) infinite;
-}
-@keyframes slide {
-  100% {
-    top: -360px;
-  }
-}
-#head #myIntro1 .dynamic-txts li span {
-  position: relative;
-  margin: 5px 0;
-  line-height: 90px;
-}
-#head #myIntro1 .dynamic-txts li span::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: black;
-  border-left: 2px solid #FC6D6D;
-  animation: typing 3s infinite;
-}
-@keyframes typing {
-  40%, 60% {
-    left: calc(100% + 30px);
-  }
-  100% {
-    left: 0;
-  }
+  top: 34% !important;
+  padding-left: 30px;
+  font: 700 47px Serif;
 }
 #head #headImage {
-  width: 47%;
-  height: 100%;
+  z-index: 2 !important;
+  box-shadow: 0px -5px 8px 4px #2d3237;
+  border-radius: 100%;
+  width: 28%;
+  height: 70%;
   background-image: url("sajanImage.png");
+  background-color: #2a2d34;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.5;
+  opacity: 0.7;
   position: relative;
-  left: 52%;
+  left: 61%;
+  top: 16%;
+  animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.6rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 #head #myIntro2 {
   position: absolute;
-  top: 52%;
+  top: 49%;
   left: 30px;
   width: 47%;
 }
 #head #myIntro2 p {
   color: #878e99;
-  font: 500 20px Serif;
+  font: 500 18px Serif;
   line-height: 1.6;
   margin-top: 20px;
 }
 #head #socialMediaIcon {
   position: absolute;
-  top: 80%;
+  top: 76%;
   left: 30px;
 }
 #head #socialMediaIcon .ui {
@@ -239,7 +220,6 @@
   grid-template-columns: 4fr 8fr;
   background-color: #23262a;
   height: 88%;
-  width: 100%;
   overflow: hidden;
 }
 #about #p2 {
@@ -255,35 +235,47 @@
 }
 #about .inner1 {
   background-color: #212428;
-  box-shadow: 20px 20px #24282c;
+  border-radius: 47px;
+  margin: 30px;
+  height: 440px;
 }
 #about .inner1 #aboutImage {
-  width: 70%;
-  height: 430px;
-  margin-top: 70px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  margin-left: 14.8%;
+  box-shadow: 5px 5px 11px 11px #2d3237;
+  width: 73%;
+  height: 340px;
+  margin-top: 13%;
+  margin-left: 11%;
+  border-radius: 10%;
   transition: 1s;
 }
 #about .inner1 #aboutImage:hover {
   transform: scale(1.07);
 }
 #about .inner2 {
-  padding: 70px;
+  background-color: #212428;
+  border-radius: 47px;
+  padding: 47px;
+  margin: 30px;
+  height: 440px;
 }
 #about .inner2 .p2 {
   color: #878e99;
-  font: 500 20px Serif;
+  font: 500 17px Serif;
   line-height: 1.6;
 }
-#about .inner2 button {
+#about .inner2 a button {
   color: #D2042D;
-  padding: 20px 28px;
+  padding: 17px 21px;
   border-radius: 10px;
-  margin-top: 30px;
+  margin-left: 11px;
+  margin-top: 47px;
   background-color: #24282c;
   box-shadow: 10px 10px #1F2125;
+  transition: 1s;
+  font-size: 13px;
+}
+#about .inner2 a button:hover {
+  transform: scale(1.07);
 }
 
 #skills {
@@ -338,11 +330,12 @@
   color: #D2042D;
   letter-spacing: 2px;
   margin-top: 70px;
+  font-size: 13px;
 }
 
 .head {
   color: #c4cfde;
-  font: 700 60px sans-serif;
+  font: 700 47px sans-serif;
 }
 
 hr {
@@ -381,9 +374,9 @@ hr {
 }
 #educationIntro p {
   color: #c4cfde;
-  font: 100 17px Montserrat;
+  font: 100 14.2px Montserrat;
   line-height: 30px !important;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
 }
 
 #OL, #AL {
@@ -392,9 +385,13 @@ hr {
 #OL h1, #AL h1 {
   text-decoration: underline #D2042D;
   text-underline-offset: 4px;
+  font-size: 21px;
 }
 #OL h1:hover, #AL h1:hover {
   text-decoration: underline yellow;
+}
+#OL ul li, #AL ul li {
+  font-size: 17px !important;
 }
 
 #contact {
@@ -443,7 +440,7 @@ textarea:hover {
 
 .form label {
   color: #c4cfde;
-  font: 500 12px "sans-serif";
+  font: 500 11px "sans-serif";
   letter-spacing: 2px;
   padding-top: 30px;
 }
@@ -513,7 +510,7 @@ textarea:hover {
   margin-top: 30px !important;
   position: relative;
   top: 2%;
-  font: 500 20px "sans-serif";
+  font: 500 17px "sans-serif";
   color: #c4cfde;
 }
 .text:hover {
@@ -528,7 +525,7 @@ textarea:hover {
   line-height: 34px !important;
   margin: 20px;
   margin-top: 55px !important;
-  font: 100 17px Montserrat;
+  font: 100 13px Montserrat;
   color: #c4cfde;
 }
 
@@ -609,12 +606,11 @@ textarea:hover {
   #head #myIntro1 p span {
     color: #D2042D;
   }
-  #head #myIntro1 .dynamic-txts li {
+  #head #myIntro1 #dynamic-txts-head {
     font-size: 43px;
   }
-  #head #headImage {
-    width: 38%;
-    top: 4%;
+  #head #socialMediaIcon {
+    top: 83% !important;
   }
   #about {
     height: 80%;
@@ -642,39 +638,41 @@ textarea:hover {
     font-size: 10px !important;
   }
   #head #myIntro1 p {
-    top: 21%;
+    font-size: 40px;
   }
-  #head #myIntro1 .dynamic-txts {
-    top: 28%;
+  #head #myIntro1 #dynamic-txts-head {
+    font-size: 40px;
   }
   #head #headImage {
-    width: 47%;
-    top: 17%;
-    left: 53%;
+    width: 30%;
   }
-  #head #myIntro2 {
-    top: 43%;
-  }
-  #head #myIntro2 #socialMediaIcon {
-    top: 84.4% !important;
+  #head #myIntro2 p {
+    font-size: 16px;
   }
   #toUp {
     left: 88%;
   }
   #about {
-    height: 73%;
+    height: 91% !important;
   }
   #about #p2 {
     padding: 21px 30px;
   }
+  #about .inner1 {
+    height: 460px;
+    padding-right: 7px;
+  }
   #about .inner1 #aboutImage {
-    width: 83%;
-    height: 380px;
+    height: 300px;
     margin-left: 8%;
-    margin-top: 82px;
+    margin-top: 34%;
   }
   #about .inner2 {
     padding: 52px 30px;
+    height: 460px;
+  }
+  .head {
+    font-size: 40px !important;
   }
   #myName {
     font-size: 40px;
@@ -704,30 +702,67 @@ textarea:hover {
   #head #myIntro1 p {
     font-size: 40px;
   }
-  #head #myIntro1 .dynamic-txts li {
+  #head #myIntro1 #dynamic-txts-head {
     font-size: 38px;
   }
   #head #headImage {
-    width: 61%;
-    top: 25%;
-    left: 40%;
+    position: relative;
+    top: 20% !important;
+    left: 63.2%;
+    width: 31%;
+    height: 60%;
   }
   #about {
     height: 80%;
   }
   #about .inner1 #aboutImage {
-    height: 310px;
-    margin-top: 110px;
+    height: 280px;
+    margin-top: 52% !important;
   }
   .inner2 button {
     padding: 10px 10px !important;
-    margin-top: 16px;
+    margin-top: 25px !important;
   }
   .head {
-    font-size: 52px;
+    font-size: 37px !important;
+  }
+  .para {
+    font-size: 10px !important;
   }
 }
 @media only screen and (max-width: 670px) {
+  #head #myIntro1 p {
+    font-size: 34px;
+  }
+  #head #myIntro1 #dynamic-txts-head {
+    top: 28%;
+    font-size: 31px;
+  }
+  #head #myIntro2 {
+    top: 46%;
+  }
+  #head #myIntro2 p {
+    font-size: 15.5px;
+  }
+  #about {
+    grid-template-columns: 12fr;
+    height: auto !important;
+  }
+  #about .inner1 {
+    grid-row: 2/3;
+  }
+  #about .inner1 #aboutImage {
+    height: 340px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 11% !important;
+  }
+  #about .inner2 {
+    grid-row: 1/2;
+  }
+  #about .inner2 a button {
+    margin-top: 52px !important;
+  }
   .skillsImage img {
     width: 250px;
     height: 120px;
@@ -741,7 +776,7 @@ textarea:hover {
 }
 @media only screen and (max-width: 560px) {
   #head #myIntro2 {
-    top: 43%;
+    top: 47%;
     width: 91%;
   }
   #head #headImage {
@@ -749,7 +784,7 @@ textarea:hover {
   }
   #head #socialMediaIcon {
     position: absolute;
-    top: 74%;
+    top: 76% !important;
     left: 30px;
   }
   .left {
@@ -762,22 +797,6 @@ textarea:hover {
   #toUp {
     left: 80%;
   }
-  #about {
-    grid-template-columns: 12fr;
-    height: 130%;
-  }
-  #about .inner1 {
-    grid-row: 2/3;
-  }
-  #about .inner1 #aboutImage {
-    height: 280px;
-    width: 73%;
-    margin-top: 30px;
-    margin-left: 13.3%;
-  }
-  #about .inner2 {
-    grid-row: 1/2;
-  }
   .skillsImage {
     left: 17%;
   }
@@ -785,9 +804,6 @@ textarea:hover {
     width: 200px;
     height: 100px;
     top: 47px;
-  }
-  .head {
-    font-size: 43px;
   }
   .project {
     left: 22.4%;
@@ -802,11 +818,11 @@ textarea:hover {
     font-size: 30px;
     top: 24.2%;
   }
-  #head #myIntro1 .dynamic-txts li {
+  #head #myIntro1 #dynamic-txts-head {
     font-size: 30px;
   }
   #head #myIntro2 {
-    top: 40%;
+    top: 43%;
     width: 88%;
   }
   .left {
@@ -816,10 +832,19 @@ textarea:hover {
     left: 20%;
   }
   #about {
-    height: 137%;
+    height: 151%;
   }
   #about .inner1 #aboutImage {
-    margin-top: 10px;
+    margin-top: 17% !important;
+  }
+  #about .inner2 {
+    height: 520px;
+  }
+  .head {
+    font-size: 31px !important;
+  }
+  .p2 {
+    font-size: 16px !important;
   }
   .skillsImage {
     left: 13%;
@@ -829,8 +854,19 @@ textarea:hover {
     width: 170px;
     height: 80px;
   }
-  .head {
-    font-size: 38px;
+  #educationIntro {
+    padding: 40px 20px !important;
+  }
+  #educationIntro p {
+    font-size: 13px !important;
+    letter-spacing: 1px;
+  }
+  #OL h1, #AL h1 {
+    font-size: 19px;
+  }
+  #OL ul li, #AL ul li {
+    font-size: 16px !important;
+    letter-spacing: 1.1px;
   }
   .project {
     left: 17%;
@@ -839,6 +875,13 @@ textarea:hover {
   }
   #myName {
     font-size: 30px;
+  }
+  .text {
+    font-size: 13px;
+    margin-top: 13px !important;
+  }
+  #contactIntro {
+    margin-top: 37px !important;
   }
   #footer {
     display: grid;
@@ -890,6 +933,12 @@ textarea:hover {
     width: 140px;
     height: 70px;
   }
+  .inner2 {
+    padding: 20px !important;
+  }
+  .inner2 #p2 {
+    padding: 21px 13px !important;
+  }
   .head {
     font-size: 30px;
   }
@@ -909,10 +958,8 @@ textarea:hover {
     font-size: 25px;
     top: 21.4%;
   }
-  #head #myIntro1 .dynamic-txts {
+  #head #myIntro1 #dynamic-txts-head {
     top: 22.4%;
-  }
-  #head #myIntro1 .dynamic-txts li {
     font-size: 25px;
   }
   #head #myIntro2 {
@@ -936,9 +983,12 @@ textarea:hover {
   #about {
     height: 143%;
   }
+  #about .inner1 {
+    height: 370px;
+  }
   #about .inner1 #aboutImage {
     width: 73%;
-    height: 231px;
+    height: 250px;
     margin-left: 11.8%;
   }
   .skillsImage {
