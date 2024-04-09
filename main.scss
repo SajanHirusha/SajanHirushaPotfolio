@@ -939,6 +939,10 @@ textarea {
 @media only screen and (max-width: 670px) {
   
   #head {
+    #headImage {
+     top:25% !important;
+     height: 47%;
+   }
     #myIntro1 {
 
       p {
@@ -948,8 +952,8 @@ textarea {
       #dynamic-txts-head{
         top: 28%;
         font-size: 31px;
-      }
-      
+    
+     }
     }
 
     #myIntro2 {
@@ -964,11 +968,12 @@ textarea {
     grid-template-columns: 12fr;
     height: auto !important;
     .inner1 {
+      margin: 17px;
       grid-row: 2/3;
       #aboutImage {
         height: 340px;
-        width: 80%;
-        margin-left: 10%;
+        width: 74%;
+        margin-left: 13%;
         margin-top: 11% !important;
       }
     }
@@ -1065,6 +1070,7 @@ textarea {
         top: 24.2%;
       }
       #dynamic-txts-head{
+        top:30% !important;
         font-size: 30px;
       }
     }
@@ -1072,8 +1078,13 @@ textarea {
     #myIntro2 {
       top: 43%;
       width: 88%;
+      p {
+        font-size: 13px;
+      }
     }
-
+    #socialMediaIcon {
+      top: 68% !important;
+    }
   }
   .left {
     left: -4% !important;
@@ -1111,7 +1122,7 @@ textarea {
     padding: 40px 20px !important;
 
     p {
-      font-size: 13px !important;
+      font-size: 12px !important;
       letter-spacing: 1px;
     }
   }
@@ -1123,7 +1134,7 @@ textarea {
   
     ul{
       li{
-        font-size: 16px !important;
+        font-size: 13px !important;
         letter-spacing: 1.1px;
       }
     }
@@ -1137,11 +1148,18 @@ textarea {
     font-size: 30px;
   }
   .text {
-   font-size: 13px;
+   font-size: 12px;
   margin-top: 13px !important;
   }
   #contactIntro {
     margin-top: 37px !important;
+    font-size: 11px;;
+  }
+
+  .otherInfo {
+    button {
+      font-size: 11px !important;
+    }
   }
   #footer{
     display: grid;
@@ -1179,8 +1197,25 @@ textarea {
 @media only screen and (max-width: 380px) {
 
   #head {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('headBackground.jpg');
+    height: 73%;
+    #myIntro1 {
+
+      p {
+        font-size: 25px;
+        top: 21.4%;
+      }
+      #dynamic-txts-head{
+        top:26% !important;
+        font-size: 25px;
+      }
+    }
+    #myIntro2 {
+      top: 37%;
+    }
+
     #socialMediaIcon {
-      top: 83%;
+      top: 62% !important;
     }
   }
 
@@ -1202,10 +1237,23 @@ textarea {
       height: 70px;
     }
   }
+  #about{
+    #aboutImage {
+        height: 280px !important;
+     }
+  }
+  .inner1{
+    height: 380px !important;
+  }
   .inner2 {
-    padding: 20px !important;
+     height: 440px !important;
+    padding: 30px !important;
+    
     #p2{
       padding: 21px 13px !important;
+      .p2{
+    font-size: 13px !important;
+   }
     }
   }
   .head {
@@ -1225,27 +1273,13 @@ textarea {
 
 @media only screen and (max-width: 331px) {
   #head {
-    #myIntro1 {
-
-      p {
-        font-size: 25px;
-        top: 21.4%;
-      }
-      #dynamic-txts-head{
-        top: 22.4%;
-        font-size: 25px;
-      }
-      
-    }
+   
 
     #myIntro2 {
       top: 34%;
       width: 83%;
     }
 
-    #socialMediaIcon {
-      top: 80%;
-    }
   }
   .left {
     flex: 1;
@@ -1265,7 +1299,7 @@ textarea {
     height: 143%;
 
     .inner1 {
-      height: 370px ;
+      
       #aboutImage {
         width: 73%;
         height: 250px;

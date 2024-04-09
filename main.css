@@ -731,6 +731,10 @@ textarea:hover {
   }
 }
 @media only screen and (max-width: 670px) {
+  #head #headImage {
+    top: 25% !important;
+    height: 47%;
+  }
   #head #myIntro1 p {
     font-size: 34px;
   }
@@ -749,12 +753,13 @@ textarea:hover {
     height: auto !important;
   }
   #about .inner1 {
+    margin: 17px;
     grid-row: 2/3;
   }
   #about .inner1 #aboutImage {
     height: 340px;
-    width: 80%;
-    margin-left: 10%;
+    width: 74%;
+    margin-left: 13%;
     margin-top: 11% !important;
   }
   #about .inner2 {
@@ -819,11 +824,18 @@ textarea:hover {
     top: 24.2%;
   }
   #head #myIntro1 #dynamic-txts-head {
+    top: 30% !important;
     font-size: 30px;
   }
   #head #myIntro2 {
     top: 43%;
     width: 88%;
+  }
+  #head #myIntro2 p {
+    font-size: 13px;
+  }
+  #head #socialMediaIcon {
+    top: 68% !important;
   }
   .left {
     left: -4% !important;
@@ -858,14 +870,14 @@ textarea:hover {
     padding: 40px 20px !important;
   }
   #educationIntro p {
-    font-size: 13px !important;
+    font-size: 12px !important;
     letter-spacing: 1px;
   }
   #OL h1, #AL h1 {
     font-size: 19px;
   }
   #OL ul li, #AL ul li {
-    font-size: 16px !important;
+    font-size: 13px !important;
     letter-spacing: 1.1px;
   }
   .project {
@@ -877,11 +889,15 @@ textarea:hover {
     font-size: 30px;
   }
   .text {
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 13px !important;
   }
   #contactIntro {
     margin-top: 37px !important;
+    font-size: 11px;
+  }
+  .otherInfo button {
+    font-size: 11px !important;
   }
   #footer {
     display: grid;
@@ -915,8 +931,23 @@ textarea:hover {
   }
 }
 @media only screen and (max-width: 380px) {
+  #head {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("headBackground.jpg");
+    height: 73%;
+  }
+  #head #myIntro1 p {
+    font-size: 25px;
+    top: 21.4%;
+  }
+  #head #myIntro1 #dynamic-txts-head {
+    top: 26% !important;
+    font-size: 25px;
+  }
+  #head #myIntro2 {
+    top: 37%;
+  }
   #head #socialMediaIcon {
-    top: 83%;
+    top: 62% !important;
   }
   .left img {
     margin-top: 28px;
@@ -933,11 +964,21 @@ textarea:hover {
     width: 140px;
     height: 70px;
   }
+  #about #aboutImage {
+    height: 280px !important;
+  }
+  .inner1 {
+    height: 380px !important;
+  }
   .inner2 {
-    padding: 20px !important;
+    height: 440px !important;
+    padding: 30px !important;
   }
   .inner2 #p2 {
     padding: 21px 13px !important;
+  }
+  .inner2 #p2 .p2 {
+    font-size: 13px !important;
   }
   .head {
     font-size: 30px;
@@ -954,20 +995,9 @@ textarea:hover {
   }
 }
 @media only screen and (max-width: 331px) {
-  #head #myIntro1 p {
-    font-size: 25px;
-    top: 21.4%;
-  }
-  #head #myIntro1 #dynamic-txts-head {
-    top: 22.4%;
-    font-size: 25px;
-  }
   #head #myIntro2 {
     top: 34%;
     width: 83%;
-  }
-  #head #socialMediaIcon {
-    top: 80%;
   }
   .left {
     flex: 1;
@@ -982,9 +1012,6 @@ textarea:hover {
   }
   #about {
     height: 143%;
-  }
-  #about .inner1 {
-    height: 370px;
   }
   #about .inner1 #aboutImage {
     width: 73%;
