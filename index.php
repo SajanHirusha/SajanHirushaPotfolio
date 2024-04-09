@@ -72,25 +72,18 @@ if (isset($_POST['submit'])) {
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contacts</a></li>
     </div>
-    <span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()"><img id="menuImg"
-                                                                                      src="menu .png"> </span>
+    <span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()"><img id="menuImg" src="menu .png"> </span>
 
 </nav>
 <!--NAVBAR CLOSE-->
 
 <!--HEAD OPEN-->
 <div id="head">
-    <div id="headImage">
+    <div id="headImage" >
     </div>
     <div id="myIntro1">
         <p>Hi, I’m <span>Sajan Hirusha</span></p>
-
-        <ul class="dynamic-txts">
-            <li><span>a Professional Coder.</span></li>
-            <li><span>a Developer.</span></li>
-            <li><span>a Freelancer.</span></li>
-            <li><span>a Undergraduate.</span></li>
-        </ul>
+        <h1 id="dynamic-txts-head">I'm <span class="dynamic-txts"></span></h1>
     </div>
 
     <div id="myIntro2">
@@ -131,27 +124,27 @@ if (isset($_POST['submit'])) {
 
 
 <!--ABOUT SECTION START-->
-<div id="about">
-    <div class="inner1 ">
-        <img id="aboutImage" src="sajanAbout.jpg" alt="">
+    <div id="about">
+            <div class="inner1 ">
+                <img id="aboutImage" src="sajanAbout.jpg" alt="">
 
-    </div>
-    <div class="inner2 ">
-        <p class="para">VISIT MY PORTFOLIO & HIRE ME</p>
-        <h1 class="head">About Me</h1>
-        <div id="p2">
-            <p class="p2">Hello, I am Sajan Hirusha from Sri Lanka. I am a professional Web designer and
-                developer
-                with 2 years of experience. My main target is to provide a good service to my buyers. Please
-                message
-                me with your requests.</p>
-        </div>
-        <a href="SajanCv.pdf" target="_blank">
-            <button>DOWNLOAD MY CV</button>
-        </a>
+            </div>
+            <div class="inner2 ">
+                <p class="para">VISIT MY PORTFOLIO & HIRE ME</p>
+                <h1 class="head">About Me</h1>
+                <div id="p2">
+                    <p class="p2">Hello, I am Sajan Hirusha from Sri Lanka. I am a professional Web designer and
+                        developer
+                        with 2 years of experience. My main target is to provide a good service to my buyers. Please
+                        message
+                        me with your requests.</p>
+                </div>
+                <a href="SajanCv.pdf" target="_blank">
+                    <button>DOWNLOAD MY CV</button>
+                </a>
 
+            </div>
     </div>
-</div>
 
 
 <!--ABOUT SECTION CLOSE-->
@@ -227,8 +220,7 @@ if (isset($_POST['submit'])) {
     <p class="para">EDUCATION</p>
     <h1 class="head">Education Details</h1>
     <div id="educationIntro"><p>&emsp;&emsp;&emsp; I am a undergraduate of uva wellassa university.I am a past student
-            of Asoka Vidyalaya colombo 10. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,
-            quasi!</p>
+        of Asoka Vidyalaya colombo 10. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, quasi!</p>
     </div>
     <div class="row educationRow">
         <div id="OL" class="col-lg-6 col-md-6 col-sm-6 col-12">
@@ -373,8 +365,8 @@ if (isset($_POST['submit'])) {
                 <input type="text" name="subject" id="subject"><br>
                 <label for="message">YOUR MESSAGE</label><br>
                 <textarea name="message" id="message" cols="92" rows="10"></textarea>
-                <button type="submit" name="submit" id="submit">SEND MESSAGE</button>
-                <p id="submitStatus"><?php echo $paragraph_content ?></p>
+                <button type="submit" id="submit">SEND MESSAGE</button>
+
             </form>
         </div>
     </div>
@@ -416,8 +408,8 @@ if (isset($_POST['submit'])) {
 </div>
 
 <!--FOOTER SECTION CLOSE-->
-
-
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
