@@ -1096,11 +1096,13 @@ textarea {
   #about {
     height:151%;
     .inner1 {
+      margin-top: 10px !important;
       #aboutImage {
         margin-top: 17% !important;
       }
     }
     .inner2 {
+      margin-bottom: 7px !important;
       height: 520px;
     }
   }
@@ -1242,7 +1244,7 @@ textarea {
         height: 280px !important;
      }
   }
-  .inner1{
+  .inner1{  
     height: 380px !important;
   }
   .inner2 {
@@ -1273,7 +1275,16 @@ textarea {
 
 @media only screen and (max-width: 331px) {
   #head {
-   
+    height: 67%;
+    #myIntro1 {
+
+      p {
+        font-size: 20px;
+      }
+      #dynamic-txts-head{
+        font-size: 20px;
+      }
+    }
 
     #myIntro2 {
       top: 34%;

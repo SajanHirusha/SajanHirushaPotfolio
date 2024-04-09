@@ -784,9 +784,6 @@ textarea:hover {
     top: 47%;
     width: 91%;
   }
-  #head #myIntro2 p {
-    font-size: 13px;
-  }
   #head #headImage {
     display: none;
   }
@@ -834,6 +831,9 @@ textarea:hover {
     top: 43%;
     width: 88%;
   }
+  #head #myIntro2 p {
+    font-size: 13px;
+  }
   #head #socialMediaIcon {
     top: 68% !important;
   }
@@ -846,10 +846,14 @@ textarea:hover {
   #about {
     height: 151%;
   }
+  #about .inner1 {
+    margin-top: 10px !important;
+  }
   #about .inner1 #aboutImage {
     margin-top: 17% !important;
   }
   #about .inner2 {
+    margin-bottom: 7px !important;
     height: 520px;
   }
   .head {
